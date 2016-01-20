@@ -21,8 +21,3 @@ header p span { font-size: 0.8em; font-weight: normal;}
 li img { float:left; padding-right: 1em; }
 li p { font-size: 0.9em; font-style: italic; }
 footer span { float: right; font-style: italic; }
-/* Smartphones (portrait) */
-@media only screen and (max-width: 480px) {
-  body { font-size: 12px;}
-  header p { padding-left: 4.5em;}
-}
