@@ -18,6 +18,7 @@ body {
   width: 256px;
   z-index: -1;
 }
+
 .randomPizzaContainer {
   float: left;
   display: flex;
