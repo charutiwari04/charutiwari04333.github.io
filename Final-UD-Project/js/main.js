@@ -246,7 +246,7 @@ var AppViewModel = {
                 } else {
                     message = 'Uncaught Error.\n' + jqXHR.responseText;
                 }
-                alert("<p>Additional information about <b>" + placeData.name + "</b> location can not be found because of the following error <b>" + message + "</b> Please try again later.</p>");
+                alert("Additional information about " + placeData.name + " location can not be found because of the following error " + message + "... Please try again later.");
             })
         });
     }
