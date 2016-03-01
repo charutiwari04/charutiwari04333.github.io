@@ -14,7 +14,7 @@ This is a single page project featuring a map of museums in San Francisco, CA.  
 1. On the left hand side is list of locations and search input area.
 1. On the right hand side of the window displays google map.
 
-### Different features
+### Various features
 
 ####Search Feature
 
@@ -50,4 +50,4 @@ Following errors can be expected in case something goes wrong:-
 
 
 ##Known restrictions
-*  This app is limited to only nine locations. In future, more locations may be added.
+*  This app is limited to only five locations search. In future, more locations may be added.
