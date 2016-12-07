@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Shiv Durga Temple</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body ng-app="templeApp">
+		<div class="container-fluid">
+			<h1 class="head">Shiv Durga Temple</h1>
+			<header>
+				<div class="navbar navbar-default" role="navigation">
+					<div class="container main">
+						<div class="navbar-header">
+							
+							<a class="navbar-brand" href="#/"><img style="max-width:100px; margin-top: -15px;" class="img-responsove" src="images/shiv-durga-logo.png" alt="Shiv Durga Logo"></a>
+						</div>
+						<div class="collapse navbar-collapse" id="js-navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#/">Home</a></li>
+								<li><a ui-sref="events">Events</a></li>
+								<li><a ui-sref="booking">Pooja Bookings</a></li>
+								<li><a ui-sref="sponsor">Sponsor</a></li>
+								<li><a ui-sref="calendar">Hindu Calendar</a></li>
+								<li><a ui-sref="photos">Photo Albums</a></li>
+								<li><a ui-sref="contact">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-8" ui-view></div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</main>
+			<!--<main ui-view></main>-->
+			<footer>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="footer-sec col-md-3"></div>
+						<div class="footer-ext col-md-1"></div>
+						<div class="footer-sec col-md-3"></div>
+						<div class="footer-ext col-md-1"></div>
+						<div class="footer-sec col-md-3"></div>
+						<div class="footer-ext col-md-1"></div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="scripts/lib/jquery.min.js"></script>
+		<script src="scripts/lib/bootstrap.min.js"></script>
+		<script src="scripts/lib/angular.js"></script>
+		<script src="scripts/lib/angular-ui-router.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/home.js"></script>
+		<script src="scripts/events.js"></script>
+	</body>
+</html>
