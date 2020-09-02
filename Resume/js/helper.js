@@ -114,14 +114,14 @@ function initializeMap() {
   For the map to be displayed, the googleMap var must be
   appended to #mapDiv in resumeBuilder.js. 
   */
-  map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+  //map = new google.maps.Map(document.querySelector('#map'), mapOptions);
 
 
   /*
   locationFinder() returns an array of every location string from the JSONs
   written for bio, education, and work.
   */
-  function locationFinder() {
+  /* function locationFinder() {
 
     // initializes an empty array
     var locations = [];
@@ -142,7 +142,7 @@ function initializeMap() {
     }
 
     return locations;
-  }
+  } */
 
   /*
   createMapMarker(placeData) reads Google Places search results to create map pins.
