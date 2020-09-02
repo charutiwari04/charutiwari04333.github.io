@@ -96,15 +96,15 @@ This is the fun part. Here's where we generate the custom Google Map for the web
 See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
-//var map;    // declares a global map variable
+var map;    // declares a global map variable
 
 
 /*
 Start here! initializeMap() is called when page is loaded.
 */
-/*function initializeMap() {
+function initializeMap() {
 
-  var locations =[];
+  var locations;
 
   var mapOptions = {
     disableDefaultUI: true
@@ -121,35 +121,35 @@ Start here! initializeMap() is called when page is loaded.
   locationFinder() returns an array of every location string from the JSONs
   written for bio, education, and work.
   */
-  /*function locationFinder() {
+  /* function locationFinder() {
 
     // initializes an empty array
-    var locs = [];
+    var locations = [];
 
     // adds the single location property from bio to the locations array
-    locs.push(model.bio.contacts.location);
+    locations.push(bio.contacts.location);
 
     // iterates through school locations and appends each location to
     // the locations array
     for (var school in education.schools) {
-      locs.push(model.education.schools[school].location);
+      locations.push(education.schools[school].location);
     }
 
     // iterates through work locations and appends each location to
     // the locations array
     for (var job in work.jobs) {
-      locs.push(model.work.jobs[job].location);
+      locations.push(work.jobs[job].location);
     }
 
-    return locs;
-  }
+    return locations;
+  } */
 
   /*
   createMapMarker(placeData) reads Google Places search results to create map pins.
   placeData is the object returned from search results containing information
   about a single location.
   */
-  /*function createMapMarker(placeData) {
+  function createMapMarker(placeData) {
 
     // The next lines save location data from the search result object to local variables
     var lat = placeData.geometry.location.lat();  // latitude from the place service
@@ -159,7 +159,7 @@ Start here! initializeMap() is called when page is loaded.
 
     // marker is an object with additional data about the pin for a single location
     var marker = new google.maps.Marker({
-      map: octopus.map,
+      map: map,
       position: placeData.geometry.location,
       title: name
     });
@@ -174,7 +174,7 @@ Start here! initializeMap() is called when page is loaded.
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
       // your code goes here!
-	  infoWindow.open(octopus.map,marker);
+	  infoWindow.open(map,marker);
     });
 
     // this is where the pin actually gets added to the map.
@@ -190,7 +190,7 @@ Start here! initializeMap() is called when page is loaded.
   callback(results, status) makes sure the search returned results for a location.
   If so, it creates a new map marker for that location.
   */
- /* function callback(results, status) {
+  function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
       createMapMarker(results[0]);
     }
@@ -200,7 +200,7 @@ Start here! initializeMap() is called when page is loaded.
   pinPoster(locations) takes in the array of locations created by locationFinder()
   and fires off Google place searches for each location
   */
-  /*function pinPoster(locations) {
+  function pinPoster(locations) {
 
     // creates a Google place search service object. PlacesService does the work of
     // actually searching for location data.
@@ -236,10 +236,10 @@ Start here! initializeMap() is called when page is loaded.
 Uncomment the code below when you're ready to implement a Google Map!
 */
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+window.addEventListener('load', initializeMap);
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
-//window.addEventListener('resize', function(e) {
+window.addEventListener('resize', function(e) {
   //Make sure the map bounds get updated on page resize
-  //map.fitBounds(mapBounds);
-//});
+  map.fitBounds(mapBounds);
+});
