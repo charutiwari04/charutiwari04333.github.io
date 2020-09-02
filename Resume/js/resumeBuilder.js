@@ -23,10 +23,31 @@ var work = {
 	 },
 	 {
       "employer"   : "IBM Global",
-      "title"      : "Web Developer",
+      "title"      : "Advisory System Analyst",
       "location"   : "USA",
-      "dates"      : "01/2010-till date",
+      "dates"      : "01/2010-05/2016",
       "description": "Write client-side code for creating fast and responsive web-based applications. Follow clean code HTML and javascript principles. Apply javascript object-oriented techniches to create the application. Meeting with stakeholders, managers and designers to understand the requirement. Creating Use-cases or prototypes. Using sematically correct HTML language for creating websites. Work under Agile methodology environment. Used javascript to enable web data in the reporting tools. Writing data manipulation and reporting scripts for web data which was received in the form of JSON object. Working on large database on Oracle and Sql Databases."	  
+	 },
+	 {
+		"employer"   : "FreeLancer",
+		"title"      : "UX Research/UI Developer",
+		"location"   : "USA",
+		"dates"      : "07/2016-05/2017",
+		"description": "Analyse and Understand the flow of the website, Create prototype and mockups of the websites. Worked with backend engineer to implement and discuss JSON structure for the backend – front end interaction"	  
+	 },
+	 {
+		"employer"   : "Cisco",
+		"title"      : "Front End Developer",
+		"location"   : "San Jose, CA",
+		"dates"      : "06/2017-10/2018",
+		"description": "Create cross-browser AngularJS application to support multiple browsers such as Firefox, IE9, IE10, IE11, MS-edge, Safari, and chrome. Follow MVC architecture pattern for two-way data binding both in front-end with Angular JS and server side, for that developed controllers, directives, and factory in Angular framework to communicate with Restful APIs. Responsibilities included completing UI tasks assigned for the sprint, bug fixing, adding feature requests, enhancements and new development"	  
+	 },
+	 {
+		"employer"   : "PAYPAL",
+		"title"      : "Front End Developer",
+		"location"   : "San Jose, CA",
+		"dates"      : "10/2018-Till Date",
+		"description": "Build/Test single page web application using ReactJS/Redux, NodeJS. Set up the front end and backend infrastructure for the new application using NodeJS, Kra-kenJS, ReactJS, Redux, Paypal Services. Apply modern workflow to website including automation via Gulp, webpack, and version control via Git. "	  
 	 }
 	],
 	"display" : function(){
@@ -78,18 +99,16 @@ var projects= {
 };
 var bio = {
 	"name" : "Charu Tiwari",
-	"role" : "Web Developer",
+	"role" : "Front End Developer",
 	"welcomeMessage" : "Welcome to my portfolio...",
 	"contacts" : {
 		"mobile" : "507-530-4545",
 		"email"  : "charu.tiwari04@gmail.com",
-		"twitter": "abc@",
 		"github" : "charutiwari04",
-		"linkedin" : "https://www.linkedin.com/pub/charu-tiwari/a2/5a/9ba",
-		"blog"   : "charu.blog",
+		"linkedin" : "https://www.linkedin.com/in/charutiwari04/",
 		"location": "Sunnyvale CA"
 	},
-	"skills" : ["HTML", "CSS", "Javascript", "jQuery", "Bootstrap"],
+	"skills" : ["HTML5", "CSS3", "Javascript ES5/ES6", "ReactJS", "NodeJS"],
 	"bioPic" : "images/my.jpg",
 	"display" : function(){
 		var formatemail, formatmobile, formatgithub, formatTwitter, formatBlog, formatlocation, formatbiopic, formatmsg, formattedName, formattedRole;
@@ -138,14 +157,6 @@ var education ={
       "url"   : "http://www.kecua.ac.in/"	  
 	}
 	],
-	"onlineCourses" :[
-	{
-		"title" : "Front End Developer",
-		"school": "Udacity",
-		"Dates" : 2015,
-		"url"   : "www.udacity.com"
-	}
-	],
 	"display" : function(){
 		var formatSclName, formatSclDegree, formatSclDates, formatSclLocation, formatSclMajor;
 	    for(school in education.schools){
@@ -188,4 +199,4 @@ function inName(name){
 }
 //$('#main').append(internationalizeButton);
 
-$('#mapDiv').append(googleMap);
+//$('#mapDiv').append(googleMap);
